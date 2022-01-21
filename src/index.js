@@ -52,7 +52,7 @@ function addNewTask(event){
   priority.setAttribute("id", priorityId)
   priority.innerHTML += '<option value="transparent" selected="selected"> -- Edit Priority -- </option> <option value="red">High Priority</option> <option value="yellow">Medium Priority</option> <option value="green">Low Priority</option>'
 
-  document.getElementById("tasks").appendChild(priority);
+  li.appendChild(priority);
   priority.addEventListener("change", editPriority)
   
   
